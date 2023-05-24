@@ -1,0 +1,64 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.submenu {
+	position: absolute;
+	top: 110%;
+	left: 0;
+	padding: 20px;
+	box-shadow: $shadow;
+	background-color: #fff;
+	animation: submenuShow 0.3s;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.item {
+	transition: all 1s ease-out;
+
+	&:not(:first-child) {
+		margin-top: 15px;
+	}
+}
+
+.link {
+	@include text-styles(1rem, 500, $black);
+
+	transition: color 0.1s ease-out;
+	cursor: pointer;
+
+	&:hover {
+		color: $red;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+@keyframes submenuShow {
+	0% {
+		top: -100%;
+	}
+
+	100% {
+		top: 110%;
+	}
+}
+
+.burger {
+	position: relative;
+	width: 100%;
+	padding: 5px 10px 0 10px;
+
+	transition: all 2s ease-in-out;
+
+	.item {
+		top: 0;
+		transition: all 2s ease-in-out;
+
+		&:not(:first-child) {
+			margin-top: 10px;
+		}
+	}
+}

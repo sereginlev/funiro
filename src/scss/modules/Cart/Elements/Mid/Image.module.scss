@@ -1,0 +1,21 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.image {
+	display: block;
+}
+
+.item {
+	width: 150px;
+	height: 150px;
+
+	@media (max-width: 1500px) {
+		width: 100px;
+		height: 100px;
+	}
+
+	@media (max-width: 480px) {
+		width: 70px;
+		height: 70px;
+	}
+}

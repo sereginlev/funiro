@@ -1,0 +1,89 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	&:not(:first-child) {
+		margin-left: 15px;
+	}
+
+	i {
+		@include text-styles(1rem, 600, $black);
+		margin-left: 5px;
+		transition: transform 0.3s ease-out, color 0.1s ease-out;
+		cursor: pointer;
+	}
+
+	&:hover {
+		.link {
+			color: $red;
+		}
+
+		i {
+			transform: rotate(-180deg);
+			color: $red;
+		}
+	}
+
+	&:last-child {
+		&:active {
+			.link {
+				opacity: 0.6;
+			}
+
+			i {
+				opacity: 0.6
+			}
+		}
+	}
+}
+
+.link {
+	@include text-styles(1rem, 500, $black);
+
+	transition: color 0.1s ease-out;
+	cursor: pointer;
+}
+
+.burger {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	transition: all 2s;
+
+	.item {
+		display: grid;
+		grid-template-columns: 1fr 0.01fr;
+		top: 0;
+		width: 90%;
+		height: 100%;
+		justify-content: space-between;
+		padding: 10px;
+		border: 1px solid $black;
+		animation: submenuShow 1s;
+		transition: all 2s;
+
+		&:not(:first-child) {
+			margin-left: 0;
+		}
+	}
+}
+
+@keyframes submenuShow {
+	0% {
+		height: 0;
+	}
+
+	100% {
+		height: 100%;
+	}
+}

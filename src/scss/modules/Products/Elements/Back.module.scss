@@ -1,0 +1,94 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $grey;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	animation: showBack 1s;
+}
+
+.button {
+	@include text-styles(16px, 600, $orange);
+
+	display: block;
+	background-color: #fff;
+	padding: 12px 55px;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+
+	&:hover {
+		background-color: $orange;
+		color: #fff;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+}
+
+.actions {
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	background: transparent;
+	cursor: pointer;
+
+	&:hover {
+		.text {
+			color: $orange;
+		}
+
+		.icon {
+			path {
+				fill: $orange;
+			}
+		}
+	}	
+
+	&:active {
+		opacity: 0.8;
+	}
+}
+
+.icon {
+	path {
+		transition: all 0.3s ease-out;
+		fill: #fff;
+	}
+}
+
+.text {
+	@include text-styles(16px, 600, #fff);
+
+	cursor: pointer;
+	margin-left: 8px;
+	transition: all 0.3s ease-out;
+}
+
+@keyframes showBack {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+

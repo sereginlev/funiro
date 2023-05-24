@@ -1,0 +1,52 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.cart {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 3;
+	animation: openCart 0.5s;
+}
+
+.block {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 30%;
+	background-color: #fff;
+	padding: 30px;
+
+	@media (max-width: 1500px) {
+		width: 40%;
+	}
+
+	@media (max-width: 992px) {
+		width: 50%;
+	}
+
+	@media (max-width: 767px) {
+		width: 80%;
+	}
+
+	@media (max-width: 480px) {
+		width: 100%;
+	}
+}
+
+@keyframes openCart {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+

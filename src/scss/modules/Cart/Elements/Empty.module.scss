@@ -1,0 +1,45 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.image {
+	display: block;
+
+	@media (max-width: 992px) {
+		width: 180px;
+		height: 200px;
+	}
+
+	@media (max-width: 767px) {
+		width: 130px;
+		height: 150px;
+	}
+}
+
+.button {
+	@include text-styles(18px, 500, $black);
+
+	padding: 10px 30px;
+	background: transparent;
+	border: 1px solid $orange;
+	transition: all 0.3s ease-out;
+	text-align: center;
+	margin-top: 40px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $orange;
+		color: #fff;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+}

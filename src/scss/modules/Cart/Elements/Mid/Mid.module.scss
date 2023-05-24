@@ -1,0 +1,38 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.mid {
+	margin-top: 20px;
+}
+
+.list {
+	overflow-y: auto;
+	height: 650px;
+	width: 100%;
+
+	@media (max-width: 1500px) {
+		height: 400px;
+	}
+}
+
+.item {
+	display: flex;
+	padding: 20px;
+	border: 1px solid $grey;
+
+	&:not(:first-child) {
+		margin-top: 20px;
+	}
+
+	@media (max-width: 1500px) {
+		padding: 10px;
+		// flex-direction: column;
+	}
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex: 1 1 auto;
+}

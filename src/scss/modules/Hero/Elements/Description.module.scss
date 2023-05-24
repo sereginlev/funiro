@@ -1,0 +1,84 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.description {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 60px;
+	background: $white;
+	backdrop-filter: blur(15.5px);
+	max-width: 500px;
+	z-index: 2;
+	animation: showDescription 1s;
+
+	@media (max-width: 1200px) {
+		padding: 40px;
+	}
+
+	@media (max-width: 992px) {
+		padding: 30px;
+		max-width: 400px;
+	}
+
+	@media (max-width: 767px) {
+		// background-color: transparent;
+		max-width: 100%;
+	}
+}
+
+.title {
+	@include text-styles(56px, 700, $black);
+}
+
+.text {
+	@include text-styles(20px, 500, $darkGrey);
+
+	margin-top: 20px;
+}
+
+.button {
+	@include text-styles(16px, 600, #fff);
+	display: block;
+	padding: 24px 0 24px 0;
+	background-color: $orange;
+	margin-top: 50px;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+	text-align: center;
+
+	&:hover {
+		background-color: $red;
+		box-shadow: $shadow;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	@media (max-width: 992px) {
+		margin-top: 30px;
+		padding: 18px 0 18px 0;
+	}
+
+	@media (max-width: 767px) {
+		width: 30%;
+		padding: 12px 0 12px 0;
+	}
+
+	@media (max-width: 480px) {
+		margin-top: 20px;
+		width: 20%;
+		padding: 6px 0 6px 0;
+	}
+}
+
+@keyframes showDescription {
+	0% {
+		left: -100%
+	}
+
+	100% {
+		left: 0;
+	}
+}

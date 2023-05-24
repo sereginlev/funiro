@@ -1,0 +1,18 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.description {
+	@include text-styles(22px, 600, $black);
+}
+
+.price {
+	@include text-styles(24px, 600, $black);
+	min-width: 100px;
+	display: flex;
+	justify-content: flex-end;
+}

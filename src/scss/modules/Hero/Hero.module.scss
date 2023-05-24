@@ -1,0 +1,28 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.hero {
+	width: 100%;
+	height: 622px;
+	padding-top: 15px;
+	position: relative;
+	background-color: $peach;
+
+	@media (max-width: 767px) {
+		padding-top: 0;
+		height: 300px;
+	}
+}
+
+.heroWrapper {
+	background-color: $peach;
+}
+
+.bg {
+	background-color: $lightPeach;
+	width: 35%;
+	height: 100vh;
+	position: absolute;
+	top: -100%;
+	right: 0;
+}

@@ -1,0 +1,64 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+	i {
+		@include text-styles(35px, 600, $black);
+		transition: transform 0.3s ease-out;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+
+		&:active {
+			opacity: 0.8;
+		}
+
+		@media (max-width: 1500px) {
+			@include text-styles(32px, 600, $black);
+		}
+
+		@media (max-width: 992px) {
+			@include text-styles(30px, 600, $black);
+		}
+	}
+}
+
+.title {
+	@include text-styles(24px, 600, $black);
+
+	@media (max-width: 1500px) {
+		@include text-styles(20px, 600, $black);
+	}
+}
+
+.button {
+	@include text-styles(14px, 500, $black);
+
+	padding: 6px 20px;
+	background: transparent;
+	border: 1px solid $orange;
+	transition: all 0.3s ease-out;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $orange;
+		color: #fff;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	@media (max-width: 1500px) {
+		@include text-styles(13px, 500, $black);
+		padding: 6px 10px;
+	}
+}

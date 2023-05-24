@@ -1,0 +1,31 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.badge {
+	@include text-styles(16px, 500, #fff);
+
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 24px;
+	right: 24px;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+
+	@media (max-width: 992px) {
+		top: 14px;
+		right: 14px;
+		width: 38px;
+		height: 38px;
+	}
+}
+
+.red {
+	background-color: $red;
+}
+
+.green {
+	background-color: $green;
+}

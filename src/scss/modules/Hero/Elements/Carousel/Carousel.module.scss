@@ -1,0 +1,34 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.slider {
+	display: block;
+	position: relative;
+	animation: showSlider 3s;
+
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+
+.block {
+	width: 100%;
+	overflow: hidden;
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+}
+
+@keyframes showSlider {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+

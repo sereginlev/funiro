@@ -1,0 +1,21 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.header {
+	padding: 40px 10px 40px 10px;
+	background-color: $peach;
+
+	@media (max-width: 767px) {
+		padding: 20px 10px 20px 10px;
+	}
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: 0.15fr 1fr 0.05fr;
+	align-items: center;
+
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr 0.03fr;
+	}
+}

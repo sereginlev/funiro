@@ -1,0 +1,47 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.bottom {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.title {
+	@include text-styles(24px, 600, $black);
+}
+
+.button {
+	@include text-styles(16px, 600, $orange);
+
+	padding: 12px 82px;
+	display: inline-block;
+	border: 1px solid $orange;
+	background: transparent;
+	margin-top: 20px;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+	text-align: center;
+
+	&:hover {
+		background-color: $orange;
+		color: #fff;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	@media (max-width: 992px) {
+		padding: 12px 52px;
+	}
+
+	@media (max-width: 767px) {
+		margin-top: 10px;
+		padding: 12px 32px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 8px 22px;
+	}
+}

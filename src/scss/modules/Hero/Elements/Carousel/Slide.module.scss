@@ -1,0 +1,92 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.slide {
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+	right: 0;
+	min-width: 930px;
+	height: 550px;
+	background-size: cover;
+	transition: all 0.5s ease-out;
+
+	@media (max-width: 1200px) {
+		min-width: 800px;
+		height: 500px;
+	}
+
+	@media (max-width: 1200px) {
+		min-width: 700px;
+		height: 450px;
+	}
+
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+
+	
+}
+
+.info {
+	transition: all 0.5s ease-out;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	display: block;
+	padding: 24px;
+	background: $white;
+	backdrop-filter: blur(15.5px);
+
+	@media (max-width: 992px) {
+		padding: 18px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 12px;
+	}
+}
+
+.title {
+	@include text-styles(28px, 600, $black);
+}
+
+.text {
+	@include text-styles(16px, 500, $darkGrey);
+	margin-top: 5px;
+}
+
+.price {
+	@include text-styles(20px, 600, $black);
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.link {
+	margin-left: 150px;
+
+	svg {
+		path {
+			transition: all 0.3s ease-out;
+		}
+	}
+
+	&:hover {
+		svg {
+			path {
+				fill: $orange;
+			}
+		}
+	}
+
+	&:active {
+		svg {
+			opacity: 0.8;
+		}
+	}
+
+	@media (max-width: 992px) {
+		margin-left: 100px;
+	}
+}

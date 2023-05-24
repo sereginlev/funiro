@@ -1,0 +1,58 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.empty {
+	display: block;
+}
+
+.dots {
+	display: flex;
+	justify-self: center;
+
+	@media (max-width: 1200px) {
+		justify-self: flex-end;
+	}
+
+	@media (max-width: 767px) {
+		justify-self: center;
+	}
+}
+
+.dot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 11px;
+	height: 11px;
+	background-color: $grey;
+	border-radius: 50%;
+	transition: all 0.3s ease-out;
+
+	&:not(:first-child) {
+		margin-left: 20px;
+	}
+
+	&:before {
+		content: '';
+		display: none;
+		border: 2px solid $orange;
+		padding: 15px;
+		border-radius: 50%;
+	}
+
+	&:hover {
+		background-color: $orange;
+
+		&::before {
+			display: block;
+		}
+	}
+
+	&:active {
+		opacity: 0.8;
+
+		&::before {
+			opacity: 0.8;
+		}
+	}
+}

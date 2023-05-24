@@ -1,0 +1,85 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.info {
+	padding: 30px 15px 30px 15px;
+	background-color: $lightGrey;
+	height: 170px;
+	display: block;
+	cursor: pointer;
+
+	@media (max-width: 992px) {
+		padding: 20px 15px 20px 15px;
+		height: 130px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 15px 15px 15px 15px;
+		height: 100px;
+	}
+}
+
+.description {
+	@include text-styles(20px, 600, $black);
+	height: 40px;
+	cursor: pointer;
+
+	@media (max-width: 992px) {
+		height: 25px;
+	}
+
+	@media (max-width: 767px) {
+		height: 15px;
+	}
+}
+
+.category {
+	@include text-styles(16px, 500, $darkGrey);
+
+	padding: 5px;
+	display: inline-block;
+	border: 1px solid $darkGrey;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.newPrice {
+	@include text-styles(18px, 500, $darkGrey);
+	cursor: pointer;
+}
+
+.price {
+	@include text-styles(16px, 400, #B0B0B0);
+
+	display: block;
+	text-decoration: line-through;
+	cursor: pointer;
+}
+
+.link {
+	cursor: pointer;
+
+	path {
+		transition: all 0.3s ease-out;
+		fill: $black;
+	}
+
+	&:hover {
+		path {
+			fill: $orange;
+		}
+
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+}

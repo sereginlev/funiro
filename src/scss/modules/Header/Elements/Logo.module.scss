@@ -1,0 +1,24 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.logo {
+	@include text-styles(24px, 700, $black);
+	cursor: pointer;
+	transition: color 0.1s ease-out;
+	// width: 10%;
+
+	&:hover {
+		.dot {
+			transform: translateY(-20%);
+		}
+	}
+
+	&:active {
+		color: $red;
+	}
+}
+
+.dot {
+	display: inline-block;
+	transition: transform 0.3s ease-out, color 0.1s ease-out;
+}
