@@ -1,0 +1,137 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.gallery {
+	padding: $smallMargin 0 $smallMargin 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+.subtitle {
+	@include text-styles(20px, 400, $darkGrey);
+}
+
+.title {
+	@include text-styles(40px, 700, $black);
+
+	margin-top: 10px;
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	top: -50px;
+
+	@media (max-width: 992px) {
+		top: 0;
+	}
+}
+
+.leftTop {
+	display: flex;
+	align-items: flex-end;
+
+	@media (max-width: 992px) {
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 767px) {
+		justify-content: center;
+	}
+
+	@media (max-width: 480px) {
+		justify-content: flex-start;
+	}
+}
+
+.img1 {
+	@media (max-width: 767px) {
+		margin-top: 15px;
+	}
+
+	@media (max-width: 767px) {
+		margin-left: 15px;
+	}
+}
+
+.img2 {
+	margin-left: 15px;
+
+	@media (max-width: 767px) {
+		margin-top: 15px;
+	}
+}
+
+.leftBottom {
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+
+	@media (max-width: 767px) {
+		justify-content: center;
+	}
+
+	@media (max-width: 480px) {
+		justify-content: flex-start;
+	}
+}
+
+.img4 {
+	margin-left: 15px;
+
+	@media (max-width: 767px) {
+		margin-top: 15px;
+	}
+}
+
+.img3 {
+	@media (max-width: 767px) {
+		margin-left: 15px;
+	}
+}
+
+.center {
+	margin: 0 15px 0 15px;
+
+	@media (max-width: 992px) {
+		display: none;
+	}
+}
+
+.rightTop {
+	display: flex;
+	align-items: flex-end;
+
+	@media (max-width: 992px) {
+		display: none;
+	}
+}
+
+.img6 {
+	width: 400px;
+}
+
+.img7 {
+	margin-left: 15px;
+	width: 400px;
+}
+
+.rightBottom {
+	margin-top: 15px;
+
+	@media (max-width: 992px) {
+		display: none;
+	}
+}
+
+.img8 {
+	width: 300px;
+}
+
+.img9 {
+	margin-left: 15px;
+	width: 330px;
+}
+

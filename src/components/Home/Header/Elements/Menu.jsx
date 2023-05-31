@@ -29,7 +29,7 @@ function Menu() {
 				<p className={styles.link}>Rooms</p>
 			</li>
 			<li className={styles.item}>
-				<p className={styles.link}>Inspirations</p>
+				<a className={styles.link} href='#gallery'>Inspirations</a>
 			</li>
 		</ul>
 	)

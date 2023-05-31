@@ -6,6 +6,10 @@
 	background-color: $peach;
 }
 
+.block {
+	display: block;
+}
+
 .title {
 	@include text-styles(40px, 700, $black);
 	text-align: center;
