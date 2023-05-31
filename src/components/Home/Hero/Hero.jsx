@@ -11,7 +11,6 @@ function Hero() {
 		<div className={styles.heroWrapper}>
 			<div className='container'>
 				<section className={styles.hero}>
-					{/* <div className={styles.bg}></div> */}
 					<Description />
 					<Carousel />
 				</section>

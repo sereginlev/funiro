@@ -1,0 +1,12 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.tips {
+	padding: $smallMargin 0 $smallMargin 0;
+	background-color: $peach;
+}
+
+.title {
+	@include text-styles(40px, 700, $black);
+	text-align: center;
+}

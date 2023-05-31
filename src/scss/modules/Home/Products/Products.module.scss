@@ -2,7 +2,7 @@
 @import 'scss/libs/variables.scss';
 
 .products {
-	padding: $bigMargin 0 $bigMargin 0;
+	padding: $bigMargin 0 $smallMargin 0;
 	background-color: #fff;
 
 	@media (max-width: 767px) {
