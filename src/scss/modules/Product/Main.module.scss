@@ -1,0 +1,36 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.main {
+	background-color: $peach;
+	height: 100%;
+	padding-bottom: 60px;
+}
+
+.product {
+	display: flex;
+	padding: 60px 20px;
+	background: #fff;
+	border: 1px solid $grey;
+	box-shadow: $shadow;
+	animation: showProduct 2s;
+
+	@media (max-width: 992px) {
+		padding: 30px 10px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 20px 10px;
+		flex-direction: column;
+	}
+}
+
+@keyframes showProduct {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

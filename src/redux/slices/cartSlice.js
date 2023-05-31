@@ -18,28 +18,12 @@ export const cartSlice = createSlice({
 			} else {
 				state.cart.push({
 					...action.payload,
-					count: 1	
+					count: action.payload.count	
 				})
 			};
-
-			state.totalPrice = state.cart.reduce((sum, item) => {
-				return sum + (item.price * item.count);
-			}, 0);
-
-			state.totalCount = state.cart.reduce((sum, item) => {
-				return sum + item.count;
-			}, 0);
 		},
 		removeItem (state, action) {
 			state.cart = state.cart.filter(item => item.id !== action.payload);
-
-			state.totalPrice = state.cart.reduce((sum, item) => {
-				return sum + (item.price * item.count);
-			}, 0);
-
-			state.totalCount = state.cart.reduce((sum, item) => {
-				return sum + item.count;
-			}, 0);
 		},
 		increment (state, action) {
 			for (let i = 0; i < state.cart.length; i++) {
@@ -47,14 +31,6 @@ export const cartSlice = createSlice({
 					state.cart[i].count++;
 				}
 			}
-
-			state.totalPrice = state.cart.reduce((sum, item) => {
-				return sum + (item.price * item.count);
-			}, 0);
-
-			state.totalCount = state.cart.reduce((sum, item) => {
-				return sum + item.count;
-			}, 0);
 		},
 		decrement (state, action) {
 			for (let i = 0; i < state.cart.length; i++) {
@@ -66,7 +42,13 @@ export const cartSlice = createSlice({
 					state.cart = state.cart.filter(item => item.id !== action.payload.id);
 				}
 			}
-
+		},
+		clearCart (state) {
+			state.cart = [];
+			state.totalCount = 0;
+			state.totalPrice = 0;
+		},
+		setTotal (state) {
 			state.totalPrice = state.cart.reduce((sum, item) => {
 				return sum + (item.price * item.count);
 			}, 0);
@@ -74,15 +56,10 @@ export const cartSlice = createSlice({
 			state.totalCount = state.cart.reduce((sum, item) => {
 				return sum + item.count;
 			}, 0);
-		},
-		clearCart (state) {
-			state.cart = [];
-			state.totalCount = 0;
-			state.totalPrice = 0;
 		}
 	}
 });
 
-export const { addItem, removeItem, increment, decrement, clearCart } = cartSlice.actions;
+export const { addItem, removeItem, increment, decrement, clearCart, setTotal } = cartSlice.actions;
 
 export default cartSlice.reducer;

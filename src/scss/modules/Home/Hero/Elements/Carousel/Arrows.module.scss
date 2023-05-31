@@ -1,0 +1,44 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.arrows {
+	display: flex;
+	justify-self: flex-end;
+	
+}
+
+.arrow {
+	padding: 10px;
+	background-color: $peach;
+	border-radius: 50%;
+	transition: all 0.3s ease-out;
+
+	path {
+		transition: all 0.3s ease-out;
+		fill: $orange;
+	}
+
+	&:not(:first-child) {
+		margin-left: 5px;
+	}
+
+	&:hover {
+		background-color: $orange;
+
+		path {
+			fill: $white;
+		}
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+}
+
+.prev {
+	transform: rotate(90deg);
+}
+
+.next {
+	transform: rotate(-90deg);
+}

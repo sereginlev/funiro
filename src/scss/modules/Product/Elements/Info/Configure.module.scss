@@ -1,0 +1,61 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.configure {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+
+	@media (max-width: 480px) {
+		flex-wrap: wrap;
+	}
+}
+
+.item {
+	text-align: center;
+	position: relative;
+	top: 0;
+	padding-top: 30px;
+	animation: showItem 1s;
+
+	&:not(:first-child) {
+		margin-left: 40px;
+
+		@media (max-width: 480px) {
+			margin-left: 0;
+		}
+	}
+
+	@media (max-width: 992px) {
+		padding: 20px;
+	}
+
+	@media (max-width: 767px) {
+
+	}
+}
+
+.title {
+	@include text-styles(26px, 500, $red);
+}
+
+.text {
+	@include text-styles(20px, 400, $black);
+
+	display: block;
+	margin-top: 20px;
+
+	@media (max-width: 767px) {
+		margin-top: 10px;
+	}
+}
+
+@keyframes showItem {
+	0% {
+		top: 200px;
+	}
+
+	100% {
+		top: 0;
+	}
+}

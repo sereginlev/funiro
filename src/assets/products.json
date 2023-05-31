@@ -3,11 +3,11 @@
 		{
 			"id": 1,
 			"category": "chair",
-			"img": "/img/products/1. little arm chair sheepskin/1.jpg",
 			"description": "Little Armchair Sheepskin",
 			"price": 986,
-			"otherImgs": [
-				"/img/products/1. little arm chair sheepskin/",
+			"images": [
+				"/img/products/1. little arm chair sheepskin/1.jpg",
+				"/img/products/1. little arm chair sheepskin/2.jpg",
 				"/img/products/1. little arm chair sheepskin/3.jpg"
 			],
 			"specs": "Tradition Little Petra VB1 Armchair Sheepskin Moonlight/ Walnut/ Brass Limited Edition | We give you a special discount when you put this product in the basket.",
@@ -19,10 +19,10 @@
 		{
 			"id": 2,
 			"category": "kitchen",
-			"img": "/img/products/2. pop up toaster/1.jpg",
 			"description": "Pop-Up Toaster",
 			"price": 45,
-			"otherImgs": [
+			"images": [
+				"/img/products/2. pop up toaster/1.jpg",
 				"/img/products/2. pop up toaster/2.jpg",
 				"/img/products/2. pop up toaster/3.jpg"
 			],
@@ -35,10 +35,10 @@
 		{
 			"id": 3,
 			"category": "lamp",
-			"img": "/img/products/3. lamp light blue/1.jpg",
 			"description": "Lamp Light Blue",
 			"price": 79,
-			"otherImgs": [
+			"images": [
+				"/img/products/3. lamp light blue/1.jpg",
 				"/img/products/3. lamp light blue/2.jpg",
 				"/img/products/3. lamp light blue/3.jpg"
 			],
@@ -51,10 +51,10 @@
 		{
 			"id": 4,
 			"category": "lamp",
-			"img": "/img/products/4. golden modern lights/1.jpg",
 			"description": "Golden Modern Light",
 			"price": 189,
-			"otherImgs": [
+			"images": [
+				"/img/products/4. golden modern lights/1.jpg",
 				"/img/products/4. golden modern lights/2.jpg",
 				"/img/products/4. golden modern lights/3.jpg"
 			],
@@ -67,10 +67,10 @@
 		{
 			"id": 5,
 			"category": "skin-care",
-			"img": "/img/products/5. body oil 200ml/1.jpg",
 			"description": "Body Oil 200ml",
 			"price": 67,
-			"otherImgs": [
+			"images": [
+				"/img/products/5. body oil 200ml/1.jpg",
 				"/img/products/5. body oil 200ml/2.jpg",
 				"/img/products/5. body oil 200ml/3.jpg"
 			],
@@ -82,10 +82,10 @@
 		{
 			"id": 6,
 			"category": "lamp",
-			"img": "/img/products/6. black and white/1.jpg",
 			"description": "Black and White Lamp",
 			"price": 220,
-			"otherImgs": [
+			"images": [
+				"/img/products/6. black and white/1.jpg",
 				"/img/products/6. black and white/2.jpg",
 				"/img/products/6. black and white/3.jpg"
 			],
@@ -98,12 +98,12 @@
 		{
 			"id": 7,
 			"category": "furniture",
-			"img": "/img/products/7. cube lolo/1.png",
 			"description": "Cube Lolo Vase Black",
 			"price": 161,
-			"otherImgs": [
-				"/img/products/7. cube lolo/2.png",
-				"/img/products/7. cube lolo/3.png"
+			"images": [
+				"/img/products/7. cube lolo/1.png",
+				"/img/products/7. cube lolo/2.jpg",
+				"/img/products/7. cube lolo/3.jpg"
 			],
 			"specs": "Kubus Vase Lolo was originally designed by Søren Lassen in 2014, but was launched in connection with by Lassens 10 year anniversary 2018. The vase is a natural and sought-after extension of the series, which already counts the Kubus candlesticks and Kubus Bowl Bowl. Set it alone or in a still life, fill it with airy, colorful flowers for a feminine look or leave it alone in all its simplicity and precision.",
 			"texture": "Ceramics",
@@ -114,10 +114,10 @@
 		{
 			"id": 8,
 			"category": "chair",
-			"img": "/img/products/8. traditional armchair/1.jpg",
 			"description": "Traditional Armchair",
 			"price": 89,
-			"otherImgs": [
+			"images": [
+				"/img/products/8. traditional armchair/1.jpg",
 				"/img/products/8. traditional armchair/2.jpg",
 				"/img/products/8. traditional armchair/3.jpg"
 			],
@@ -129,26 +129,26 @@
 		},
 		{
 			"id": 9,
-			"category": "furniture",
-			"img": "/img/products/9. the sun pendant black/1.jpg",
-			"description": "Cube Lolo Vase Black",
+			"category": "lamp",
+			"description": "The Sun Pendant Black",
 			"price": 161,
-			"otherImgs": [
+			"images": [
+				"/img/products/9. the sun pendant black/1.jpg",
 				"/img/products/9. the sun pendant black/2.jpg",
 				"/img/products/9. the sun pendant black/3.jpg"
 			],
-			"specs": "Kubus Vase Lolo was originally designed by Søren Lassen in 2014, but was launched in connection with by Lassens 10 year anniversary 2018. The vase is a natural and sought-after extension of the series, which already counts the Kubus candlesticks and Kubus Bowl Bowl. Set it alone or in a still life, fill it with airy, colorful flowers for a feminine look or leave it alone in all its simplicity and precision.",
-			"texture": "Ceramics",
-			"weight": "12kg",
-			"size": "45cm x 15cm"
+			"specs": "The Here Comes The Sun pendant designed by Bertrand Balas is a quality lamp with a unique and magical look. The Here Comes The Sun series has a fantastic expression and especially swhen turned on it creates a very special atmosphere in the room it hangs in. The lamp fits perfectly above both dining room table, kitchen counter, and as living room lighting . ",
+			"texture": "Plastic",
+			"weight": "4kg",
+			"size": "20cm x 20cm"
 		},
 		{
 			"id": 10,
 			"category": "lamp",
-			"img": "/img/products/10. simple golden lamp/1.png",
 			"description": "Simple Golden Lamp",
 			"price": 220,
-			"otherImgs": [
+			"images": [
+				"/img/products/10. simple golden lamp/1.png",
 				"/img/products/10. simple golden lamp/2.jpg",
 				"/img/products/10. simple golden lamp/3.jpg"
 			],
@@ -161,10 +161,10 @@
 		{
 			"id": 11,
 			"category": "skin-care",
-			"img": "/img/products/11. unbleached cotton pads/1.jpg",
 			"description": "Unbleached Cotton Pads 180",
 			"price": 33,
-			"otherImgs": [
+			"images": [
+				"/img/products/11. unbleached cotton pads/1.jpg",
 				"/img/products/11. unbleached cotton pads/2.jpg",
 				"/img/products/11. unbleached cotton pads/3.jpg"
 			],
@@ -177,10 +177,10 @@
 		{
 			"id": 12,
 			"category": "chair",
-			"img": "/img/products/12. oak spanish chair/1.png",
 			"description": "Oak Spanish Chair",
 			"price": 520,
-			"otherImgs": [
+			"images": [
+				"/img/products/12. oak spanish chair/1.png",
 				"/img/products/12. oak spanish chair/2.jpg",
 				"/img/products/12. oak spanish chair/3.jpg"
 			],
@@ -192,10 +192,10 @@
 		{
 			"id": 13,
 			"category": "chair",
-			"img": "/img/products/13. copenhagen armchair/1.jpg",
 			"description": "Copenhagen Armchair",
 			"price": 330,
-			"otherImgs": [
+			"images": [
+				"/img/products/13. copenhagen armchair/1.jpg",
 				"/img/products/13. copenhagen armchair/2.jpg",
 				"/img/products/13. copenhagen armchair/3.jpg"
 			],
@@ -207,10 +207,10 @@
 		{
 			"id": 14,
 			"category": "electronic",
-			"img": "/img/products/14. anti dark light/1.jpg",
 			"description": "Anti Dark Light",
 			"price": 120,
-			"otherImgs": [
+			"images": [
+				"/img/products/14. anti dark light/1.jpg",
 				"/img/products/14. anti dark light/2.jpg",
 				"/img/products/14. anti dark light/3.jpg"
 			],
@@ -223,12 +223,12 @@
 		{
 			"id": 15,
 			"category": "lamp",
-			"img": "/img/products/15. table lamp/1.png",
 			"description": "Table Lamp",
 			"price": 75,
-			"otherImgs": [
-				"/img/products/15. table lamp/2.png",
-				"/img/products/15. table lamp/3.png"
+			"images": [
+				"/img/products/15. table lamp/1.png",
+				"/img/products/15. table lamp/2.jpg",
+				"/img/products/15. table lamp/3.jpg"
 			],
 			"specs": "The lamp has also become popular in private homes and has especially made a comeback in recent years. This is not least due to the lamp's stylish design and the many color options that make it fit everywhere.",
 			"texture": "Metal",
@@ -239,10 +239,10 @@
 		{
 			"id": 16,
 			"category": "lamp",
-			"img": "/img/products/16. mat black lamp/1.png",
 			"description": "Mat Black Lamp",
 			"price": 175,
-			"otherImgs": [
+			"images": [
+				"/img/products/16. mat black lamp/1.png",
 				"/img/products/16. mat black lamp/2.jpg",
 				"/img/products/16. mat black lamp/3.jpg"
 			],
@@ -255,10 +255,10 @@
 		{
 			"id": 17,
 			"category": "chair",
-			"img": "/img/products/17. comfy chair/1.jpg",
 			"description": "Comfy Chair",
 			"price": 119,
-			"otherImgs": [
+			"images": [
+				"/img/products/17. comfy chair/1.jpg",
 				"/img/products/17. comfy chair/2.jpg",
 				"/img/products/17. comfy chair/3.jpg"
 			],
@@ -271,10 +271,10 @@
 		{
 			"id": 18,
 			"category": "skin-care",
-			"img": "/img/products/18. body oil 50ml/1.jpg",
 			"description": "Body Oil 50ml",
 			"price": 45,
-			"otherImgs": [
+			"images": [
+				"/img/products/18. body oil 50ml/1.jpg",
 				"/img/products/18. body oil 50ml/2.jpg",
 				"/img/products/18. body oil 50ml/3.jpg"
 			],

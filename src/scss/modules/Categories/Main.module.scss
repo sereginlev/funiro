@@ -1,0 +1,33 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.main {
+	padding: 20px 0 60px 0;
+	background-color: #fff;
+	flex: 1 1 auto;
+}
+
+.categories {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.products {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 30px;
+
+	@media (max-width: 1300px) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media (max-width: 480px) {
+		grid-template-columns: 1fr;
+	}
+}

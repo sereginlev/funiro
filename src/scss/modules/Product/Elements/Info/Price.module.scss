@@ -1,0 +1,159 @@
+@import 'scss/libs/mixins.scss';
+@import 'scss/libs/variables.scss';
+
+.price {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 80px;
+
+	@media (max-width: 992px) {
+		margin-top: 60px;
+	}
+
+	@media (max-width: 767px) {
+		margin-top: 40px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 480px) {
+		margin-top: 20px;
+	}
+}
+
+.counter {
+	display: flex;
+	align-items: center;
+}
+
+.quantity {
+	@include text-styles(26px, 400, $black);
+	margin-right: 10px;
+}
+
+.badge {
+	@include text-styles(30px, 400, $orange);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+
+	&:hover {
+		color: #fff;
+		background-color: $orange;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	@media (max-width: 992px) {
+		width: 20px;
+		height: 20px;
+	}
+
+	@media (max-width: 767px) {
+		width: 15px;
+		height: 15px;
+	}
+
+	@media (max-width: 480px) {
+		width: 10px;
+		height: 10px;
+	}
+}
+
+.minus {
+	padding-bottom: 4px;
+
+	@media (max-width: 480px) {
+		padding-bottom: 1px;
+	}
+}
+
+.count {
+	@include text-styles(40px, 600, $black);
+}
+
+.total {
+	@include text-styles(30px, 500, $black);
+}
+
+.buttons {
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+
+	@media (max-width: 992px) {
+		margin-top: 60px;
+	}
+
+	@media (max-width: 767px) {
+		margin-top: 40px;
+	}
+
+	@media (max-width: 480px) {
+		margin-top: 20px;
+	}
+}
+
+.add {
+	@include text-styles(24px, 500, $black);
+
+	width: 250px;
+	border: 1px solid $orange;
+	background: transparent;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $orange;
+		color: #fff;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	@media (max-width: 992px) {
+		width: 150px;
+	}
+
+	@media (max-width: 480px) {
+		width: 100px;
+	}
+}
+
+.buy {
+	@include text-styles(24px, 500, #fff);
+
+	padding: 12px 0 12px 0;
+	width: 250px;
+	margin-left: 20px;
+	background-color: $red;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $orange;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	@media (max-width: 992px) {
+		width: 150px;
+	}
+
+	@media (max-width: 480px) {
+		width: 100px;
+		padding: 6px 0 6px 0;
+	}
+}
