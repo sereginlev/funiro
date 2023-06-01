@@ -23,7 +23,7 @@ function Footer() {
 							<Link className={styles.link} to='/'>Rooms</Link>
 						</li>
 						<li className={styles.item}>
-							<Link className={styles.link} to='/'>Inspirations</Link>
+							<a className={styles.link} href='#gallery'>Inspirations</a>
 						</li>
 					</ul>
 
