@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/funiro/static/css/main.507adbef.css",
-    "main.js": "/funiro/static/js/main.44822e9b.js",
+    "main.css": "/funiro/static/css/main.5129abf0.css",
+    "main.js": "/funiro/static/js/main.ea57057e.js",
     "static/media/05.jpg": "/funiro/static/media/05.af83e499a6579d57973a.jpg",
     "static/media/01.jpg": "/funiro/static/media/01.9ee25d14fbf32f22e06d.jpg",
     "static/media/04.jpg": "/funiro/static/media/04.e037190f77e19b703821.jpg",
@@ -13,19 +13,15 @@
     "static/media/empty-cart.png": "/funiro/static/media/empty-cart.17f48bd13327a233e04a.png",
     "static/media/08.jpg": "/funiro/static/media/08.45dadf17004f9b1bf7a4.jpg",
     "static/media/02.svg": "/funiro/static/media/02.4f9bae49ae0f521eba1de74a72c4831f.svg",
-    "static/media/slick.svg": "/funiro/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/01.svg": "/funiro/static/media/01.27df57fe7fe3c8f347148e83b4cf865e.svg",
     "static/media/03.svg": "/funiro/static/media/03.01ee84b57075e05e8b2f35b7c4c60ac5.svg",
-    "static/media/slick.eot": "/funiro/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/04.svg": "/funiro/static/media/04.11872ac9d8535ad7b63322f711412e88.svg",
-    "static/media/slick.ttf": "/funiro/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/funiro/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/funiro/index.html",
-    "main.507adbef.css.map": "/funiro/static/css/main.507adbef.css.map",
-    "main.44822e9b.js.map": "/funiro/static/js/main.44822e9b.js.map"
+    "main.5129abf0.css.map": "/funiro/static/css/main.5129abf0.css.map",
+    "main.ea57057e.js.map": "/funiro/static/js/main.ea57057e.js.map"
   },
   "entrypoints": [
-    "static/css/main.507adbef.css",
-    "static/js/main.44822e9b.js"
+    "static/css/main.5129abf0.css",
+    "static/js/main.ea57057e.js"
   ]
 }
