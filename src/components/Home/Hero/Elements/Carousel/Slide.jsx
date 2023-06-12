@@ -4,14 +4,20 @@ import { Link } from 'react-router-dom';
 
 import styles from 'scss/modules/Home/Hero/Elements/Carousel/Slide.module.scss';
 
+import img1 from 'assets/main-slider/01.jpg';
+import img2 from 'assets/main-slider/02.jpg';
+import img3 from 'assets/main-slider/03.jpg';
+
 function Slide({ currentIndex }) {
 	const { slider } = useSelector(state => state.slider);
+
+	const [images, setImages] = React.useState([`url(${img1})`, `url(${img2})`, `url(${img3})`])
 
 	return (
 		<>
 			{
 				slider.length > 1 &&
-				<div className={styles.slide} style={{ backgroundImage: `url(${slider[currentIndex].img})` }}>
+				<div className={styles.slide} style={{ backgroundImage: images[currentIndex] }}>
 					<div className={styles.info}>
 						<h3 className={styles.title}>{slider[currentIndex].title}</h3>
 						<p className={styles.text}>{slider[currentIndex].text}</p>

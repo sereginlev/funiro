@@ -6,8 +6,11 @@ import Arrows from './Arrows';
 import Dots from './Dots';
 import Slide from './Slide';
 
+
+
 function Carousel() {
 	const [currentIndex, setCurrentIndex] = React.useState(0);
+
 
 	return (
 		<article className={styles.slider}>
