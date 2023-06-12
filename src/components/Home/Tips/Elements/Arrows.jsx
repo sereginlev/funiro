@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 
 import styles from 'scss/modules/Home/Tips/Elements/Arrows.module.scss';
 

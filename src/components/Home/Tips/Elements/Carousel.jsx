@@ -1,5 +1,4 @@
 import React from 'react';
-import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 
 import styles from 'scss/modules/Home/Tips/Elements/Carousel.module.scss';
