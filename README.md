@@ -1,6 +1,6 @@
 # Funiro
 
-Funiro is responsive (adaptive layout) shop of furniture and items for interior and home.
+Shop of furniture and items for interior and home.
 
 ## Installation
 
