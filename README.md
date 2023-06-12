@@ -4,7 +4,7 @@ Funiro is responsive (adaptive layout) shop of furniture and items for interior 
 
 ## Installation
 
-Just follow this [link](https://jnmmt.github.io/funiro/).
+Follow this [link](https://sereginlev.github.io/funiro/).
 
 ## Usage
 
@@ -28,5 +28,3 @@ __User can:__
 - __[React Router Dom](https://reactrouter.com/en/main)__
 - __[SCSS](https://sass-lang.com/)__
 - __[CSS Modules](https://github.com/css-modules/css-modules)__
-
-### Thank you for your time!!! 😊

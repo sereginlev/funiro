@@ -2,7 +2,7 @@
   "name": "funiro",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://witchcult-today.github.io/funiro",
+  "homepage": "https://sereginlev.github.io/funiro",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
