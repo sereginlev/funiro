@@ -1,11 +1,15 @@
 {
   "files": {
     "main.css": "/funiro/static/css/main.5129abf0.css",
-    "main.js": "/funiro/static/js/main.5f062f15.js",
+    "main.js": "/funiro/static/js/main.6fa9487f.js",
+    "static/media/1.png": "/funiro/static/media/1.ce8de8e38ff2dc475ed6.png",
     "static/media/02.jpg": "/funiro/static/media/02.18b676957c3a24174d5b.jpg",
     "static/media/01.jpg": "/funiro/static/media/01.9ee25d14fbf32f22e06d.jpg",
+    "static/media/2.jpg": "/funiro/static/media/2.1149f05f13e7c8a3a13b.jpg",
     "static/media/03.jpg": "/funiro/static/media/03.21f0919e719f2c0d6127.jpg",
     "static/media/05.jpg": "/funiro/static/media/05.af83e499a6579d57973a.jpg",
+    "static/media/3.jpg": "/funiro/static/media/3.73f0400f46c05dc80cfb.jpg",
+    "static/media/1.jpg": "/funiro/static/media/1.01ad0d2d385553f6ea92.jpg",
     "static/media/04.jpg": "/funiro/static/media/04.e037190f77e19b703821.jpg",
     "static/media/06.jpg": "/funiro/static/media/06.fc70758827e1a10bd1fa.jpg",
     "static/media/07.jpg": "/funiro/static/media/07.9de9606e052ed7b2ee76.jpg",
@@ -18,10 +22,10 @@
     "static/media/04.svg": "/funiro/static/media/04.11872ac9d8535ad7b63322f711412e88.svg",
     "index.html": "/funiro/index.html",
     "main.5129abf0.css.map": "/funiro/static/css/main.5129abf0.css.map",
-    "main.5f062f15.js.map": "/funiro/static/js/main.5f062f15.js.map"
+    "main.6fa9487f.js.map": "/funiro/static/js/main.6fa9487f.js.map"
   },
   "entrypoints": [
     "static/css/main.5129abf0.css",
-    "static/js/main.5f062f15.js"
+    "static/js/main.6fa9487f.js"
   ]
 }
