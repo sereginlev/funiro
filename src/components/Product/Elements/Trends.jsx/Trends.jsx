@@ -42,7 +42,7 @@ function Trends() {
 					{
 						products.map((product, index) => (
 							index >= startIndex && index <= endIndex &&
-							<Item {...product} />
+							<Item {...product} index={index} />
 						))
 					}
 				</ul>

@@ -7,7 +7,10 @@ import Item from './Item';
 
 function List() {
 	const [count, setCount] = React.useState(8);
+
 	const { products } = useSelector(state => state.products);
+
+	const { images } = useSelector(state => state.images);
 
 	return (
 		<>
@@ -15,7 +18,7 @@ function List() {
 				{
 					products.map((product, index) => (
 						index < count &&
-						<Item {...product} key={product.id} />
+						<Item {...product} key={product.id} images={images[index]} />				
 					))
 				}
 			</ul>

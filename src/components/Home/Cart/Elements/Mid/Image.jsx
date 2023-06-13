@@ -1,12 +1,21 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 import styles from 'scss/modules/Home/Cart/Elements/Mid/Image.module.scss';
 
-function Image({ ...item }) {
+function Image({ index, ...item }) {
+	const { images } = useSelector(state => state.images);
+
 	return (
-		<div className={styles.image}>
-			<img className={styles.item} src={item.images[0]} alt={item.description} />
-		</div>
+		<>
+			{
+				images &&
+				<div className={styles.image}>
+					<img className={styles.item} src={images[item.id - 1][0]} alt={item.description} />
+				</div>
+			}
+		</>
+
 	)
 }
 

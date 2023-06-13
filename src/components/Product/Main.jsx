@@ -22,7 +22,7 @@ function Main() {
 					<section className={styles.main} key={product.id}>
 						<div className='container'>
 							<div className={styles.product}>
-								<Gallery {...product} />
+								<Gallery {...product} index={index}/>
 
 								{
 									cart.find(el => el.id === product.id) ?

@@ -14,9 +14,9 @@ function Mid() {
 		<div className={styles.mid}>
 			<ul className={styles.list}>
 				{
-					cart.map(item => (
+					cart.map((item, index) => (
 						<li className={styles.item} key={item.id}>
-							<Image {...item} />
+							<Image {...item}  index={index} />
 
 							<div className={styles.block}>
 								<Info {...item} />
