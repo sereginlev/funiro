@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/funiro/static/css/main.0eaca946.css",
-    "main.js": "/funiro/static/js/main.7945f144.js",
+    "main.css": "/funiro/static/css/main.9632b46c.css",
+    "main.js": "/funiro/static/js/main.62276e57.js",
     "static/media/2.jpg": "/funiro/static/media/2.c5f0ce5320a509f59908.jpg",
     "static/media/1.png": "/funiro/static/media/1.b04524e5024f75206ab9.png",
     "static/media/02.jpg": "/funiro/static/media/02.18b676957c3a24174d5b.jpg",
@@ -21,11 +21,11 @@
     "static/media/03.svg": "/funiro/static/media/03.01ee84b57075e05e8b2f35b7c4c60ac5.svg",
     "static/media/04.svg": "/funiro/static/media/04.11872ac9d8535ad7b63322f711412e88.svg",
     "index.html": "/funiro/index.html",
-    "main.0eaca946.css.map": "/funiro/static/css/main.0eaca946.css.map",
-    "main.7945f144.js.map": "/funiro/static/js/main.7945f144.js.map"
+    "main.9632b46c.css.map": "/funiro/static/css/main.9632b46c.css.map",
+    "main.62276e57.js.map": "/funiro/static/js/main.62276e57.js.map"
   },
   "entrypoints": [
-    "static/css/main.0eaca946.css",
-    "static/js/main.7945f144.js"
+    "static/css/main.9632b46c.css",
+    "static/js/main.62276e57.js"
   ]
 }
