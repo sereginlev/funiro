@@ -2,9 +2,7 @@
 
 Shop of furniture and items for interior and home.
 
-## Installation
-
-Follow this [link](https://sereginlev.github.io/funiro/).
+![Funiro screenshot](https://github.com/sereginlev/funiro/blob/master/funiro.png)
 
 ## Usage
 
