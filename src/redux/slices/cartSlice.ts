@@ -14,7 +14,7 @@ export type CartItem = {
 	isNew?: boolean;
 }
 
-interface CartState {
+export interface CartState {
 	cart: CartItem[];
 	totalPrice: number;
 	totalCount: number;
